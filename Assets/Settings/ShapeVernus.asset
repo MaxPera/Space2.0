@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c618ce9c1cbfa584e9cbfa721029e17e, type: 3}
+  m_Name: ShapeVernus
+  m_EditorClassIdentifier: 
+  planetRadius: 500
+  noiseLayers:
+  - noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.1
+        numLayers: 8
+        baseRoughness: 1.26
+        roughness: 2.57
+        persistence: 0.47
+        centre: {x: 3.6, y: -1.62, z: 1.09}
+        minValue: 0.34
+      rigidNoiseSettings:
+        strength: 0
+        numLayers: 0
+        baseRoughness: 0
+        roughness: 0
+        persistence: 0
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplier: 0
+    useFirstLayerAsMask: 0
+    enabled: 1
+  - noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 0.15
+        numLayers: 6
+        baseRoughness: 2.32
+        roughness: 0.52
+        persistence: 1.17
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+      rigidNoiseSettings:
+        strength: 0.29
+        numLayers: 8
+        baseRoughness: 1
+        roughness: 2.33
+        persistence: 0.64
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0.91
+        weightMultiplier: 1.35
+    useFirstLayerAsMask: 1
+    enabled: 1
+  - noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.1
+        numLayers: 6
+        baseRoughness: -3.55
+        roughness: -1.08
+        persistence: 1.4
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+      rigidNoiseSettings:
+        strength: 0
+        numLayers: 7
+        baseRoughness: -0.12
+        roughness: -1.21
+        persistence: 0.64
+        centre: {x: 0, y: 0, z: 0}
+        minValue: -2.16
+        weightMultiplier: 1.59
+    useFirstLayerAsMask: 1
+    enabled: 1

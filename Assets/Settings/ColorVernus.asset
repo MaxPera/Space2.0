@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69dc8fbdbc140444fb1425c4a7224bec, type: 3}
+  m_Name: ColorVernus
+  m_EditorClassIdentifier: 
+  planetMaterial: {fileID: 2100000, guid: 06ed877853245fb4dbd6cf14bf730faa, type: 2}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.18564895, g: 0.1707013, b: 0.26415092, a: 1}
+    key1: {r: 0.9058824, g: 0.4039216, b: 0.9803922, a: 1}
+    key2: {r: 0.6603774, g: 0.07787468, b: 0.5321894, a: 0}
+    key3: {r: 0.3207547, g: 0.062032744, b: 0.14111511, a: 0}
+    key4: {r: 0.2735849, g: 0.16389284, b: 0.23001537, a: 0}
+    key5: {r: 0.084905684, g: 0.026833398, b: 0.044431046, a: 0}
+    key6: {r: 0.65882355, g: 0.078431375, b: 0.53333336, a: 0}
+    key7: {r: 0.9066291, g: 0.4026344, b: 0.9811321, a: 0}
+    ctime0: 3662
+    ctime1: 8867
+    ctime2: 13685
+    ctime3: 25058
+    ctime4: 33924
+    ctime5: 47417
+    ctime6: 53585
+    ctime7: 59367
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
