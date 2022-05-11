@@ -15,7 +15,7 @@ public class PlanetSimulation : MonoBehaviour
 
     private void Update()
     {
-        planetBody.UpdateVelocity(otherBody, Time.fixedDeltaTime * 10);
-        planetBody.UpdatePosition(Time.fixedDeltaTime * 10);
+        planetBody.UpdateVelocity(otherBody, Time.fixedDeltaTime);
+        planetBody.UpdatePosition(Time.fixedDeltaTime);
     }
 }
