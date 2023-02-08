@@ -101,7 +101,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Alpha: 0.738
     - _AlphaClip: 0
+    - _Amount: 40.38
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -110,19 +112,23 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _Distance: 639.15
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _LambertScale: 6.05
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Shininess: 1204.8
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Speed: 20.95
     - _SrcBlend: 1
     - _Surface: 0
     - _WorkflowMode: 1
@@ -133,5 +139,7 @@ Material:
     - _Color: {r: 0.6000959, g: 0.6117647, b: 0.12941176, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _SpecularColor: {r: 0, g: 0.9789009, b: 1, a: 1}
+    - _WaterColor: {r: 0.7735849, g: 0.062032763, b: 0.062032763, a: 1}
     - _elevationMinMax: {r: 1003.4567, g: 1280.3313, b: 0, a: 0}
   m_BuildTextureStacks: []
