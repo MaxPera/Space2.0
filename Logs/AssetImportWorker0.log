@@ -15,11 +15,11 @@ C:/Schoolstuff/Space2.0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57467
+63129
 Successfully changed project path to: C:/Schoolstuff/Space2.0
 C:/Schoolstuff/Space2.0
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 53.57 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 42.98 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
@@ -36,20 +36,74 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56644
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.253456 seconds.
+Registered in 0.001681 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 39.90 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 41.04 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.545 seconds
+- Completed reload, in  0.852 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.138220 seconds.
+Registered in 0.001644 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 37.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.795 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2840 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.3 MB.
+System memory in use after: 130.5 MB.
+
+Unloading 91 unused Assets to reduce memory usage. Loaded Objects now: 3280.
+Total: 2.752300 ms (FindLiveObjects: 0.366500 ms CreateObjectMapping: 0.153100 ms MarkObjects: 2.063600 ms  DeleteObjects: 0.167800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Settings/ColorFinnisgay.asset
+  artifactKey: Guid(42fc3226264ddd544ab4dee70f9d526a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/ColorFinnisgay.asset using Guid(42fc3226264ddd544ab4dee70f9d526a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee55efe856dac275a00e171df982183') in 0.034302 seconds
+  Import took 0.039325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Settings/ShapeFinnisgay.asset
+  artifactKey: Guid(5d0e945c90109fc4c8e977c2ece53fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/ShapeFinnisgay.asset using Guid(5d0e945c90109fc4c8e977c2ece53fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b0f46bb6462ee43a1b50777c2db222c') in 0.006709 seconds
+  Import took 0.010615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 175.592425 seconds.
+  path: Assets/Graphics/PlanetMaterial.mat
+  artifactKey: Guid(e45f2c9ecc8d84a4a8c4be8c3c096615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/PlanetMaterial.mat using Guid(e45f2c9ecc8d84a4a8c4be8c3c096615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f0c1cded0996835f0d16852702df00') in 0.186570 seconds
+  Import took 0.192456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002522 seconds.
+  path: Assets/Graphics/PlanetMaterial.mat
+  artifactKey: Guid(e45f2c9ecc8d84a4a8c4be8c3c096615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/PlanetMaterial.mat using Guid(e45f2c9ecc8d84a4a8c4be8c3c096615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f0c1cded0996835f0d16852702df00') in 0.015029 seconds
+  Import took 0.020001 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

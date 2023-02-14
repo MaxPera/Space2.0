@@ -17,13 +17,13 @@ MonoBehaviour:
   - noiseSettings:
       filterType: 0
       simpleNoiseSettings:
-        strength: 0.3
+        strength: 0.05
         numLayers: 8
-        baseRoughness: 2.82
-        roughness: 1.05
-        persistence: 0.89
-        centre: {x: 0, y: 0, z: 0}
-        minValue: 0
+        baseRoughness: 2
+        roughness: 0.6
+        persistence: 0.5
+        centre: {x: 0, y: -2.03, z: 0}
+        minValue: 0.8
       rigidNoiseSettings:
         strength: 0
         numLayers: 0
@@ -38,11 +38,11 @@ MonoBehaviour:
   - noiseSettings:
       filterType: 0
       simpleNoiseSettings:
-        strength: -0.34
-        numLayers: 6
-        baseRoughness: 0.08
-        roughness: 2.88
-        persistence: 0.41
+        strength: 0.5
+        numLayers: 8
+        baseRoughness: 2
+        roughness: 3
+        persistence: 0.8
         centre: {x: 0, y: 0, z: 0}
         minValue: 0
       rigidNoiseSettings:
@@ -54,47 +54,5 @@ MonoBehaviour:
         centre: {x: 0, y: 0, z: 0}
         minValue: 0
         weightMultiplier: 0
-    useFirstLayerAsMask: 0
-    enabled: 1
-  - noiseSettings:
-      filterType: 1
-      simpleNoiseSettings:
-        strength: -0.06
-        numLayers: 6
-        baseRoughness: 0.08
-        roughness: 2.88
-        persistence: 0.41
-        centre: {x: 0, y: 0, z: 0}
-        minValue: 0
-      rigidNoiseSettings:
-        strength: 8.84
-        numLayers: 8
-        baseRoughness: 0.05
-        roughness: 0.43
-        persistence: -0.79
-        centre: {x: 0.53, y: 0, z: 0.11}
-        minValue: 0.23
-        weightMultiplier: 1.14
     useFirstLayerAsMask: 1
-    enabled: 1
-  - noiseSettings:
-      filterType: 1
-      simpleNoiseSettings:
-        strength: -0.06
-        numLayers: 6
-        baseRoughness: 0.08
-        roughness: 2.88
-        persistence: 0.41
-        centre: {x: 0, y: 0, z: 0}
-        minValue: 0
-      rigidNoiseSettings:
-        strength: 9.19
-        numLayers: 8
-        baseRoughness: 0.05
-        roughness: 0.43
-        persistence: -0.79
-        centre: {x: -0.54, y: 0, z: -0.09}
-        minValue: 0.23
-        weightMultiplier: 0.04
-    useFirstLayerAsMask: 0
     enabled: 1
