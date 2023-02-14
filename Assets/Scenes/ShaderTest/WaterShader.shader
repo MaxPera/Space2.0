@@ -3,12 +3,12 @@ Shader "Unlit/WaterShader"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _NormalMap ("Normal Map", 2D) = "normal" {}
         _WaterColor("Color", Color) = (1,1,1,1)
         _Speed("Water Speed", float) = 1
         _Amount("Wave Amount", float) = 5
         _Distance("Wave Distance", float) = 0.1
         _Alpha ("Alpha", range(0.0,1.0)) = 1.0
-        _LambertScale ("Lamber Warp", float) = 0.5
         _SpecularColor("Specular Color", Color) = (1,1,1,1)
         _Shininess ("Shininess" , Float) = 10
     }
@@ -24,6 +24,12 @@ Shader "Unlit/WaterShader"
 
         ZWrite Off
         Blend SrcAlpha OneMinusSrcAlpha
+
+        /*GrabPass
+        {
+            "_BackgroundTexture"
+        }*/
+
 
         Pass
         {
@@ -52,19 +58,21 @@ Shader "Unlit/WaterShader"
                 float4 vertex : SV_POSITION;              
                 float4 color : COLOR0;
                 float3 normal : NORMAL;
+                float4 grabPos : TEXCOORD2;
             };
 
             sampler2D _MainTex;
+            sampler2D _NormalMap;
             float4 _MainTex_ST;
             float4 _WaterColor;
             float _Speed;
             float _Amount;
             float _Distance;
             float _Alpha;
-            uniform float _LambertScale;
             uniform float4 _LightColor0;
             uniform float4 _SpecularColor;
             uniform float _Shininess;
+            sampler2D _BackgroundTexture;
 
             v2f vert (appdata v)
             {
@@ -75,9 +83,9 @@ Shader "Unlit/WaterShader"
 
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.worldNormal = normalize(mul(v.normal, (float3x3)unity_WorldToObject));
+                o.grabPos = ComputeGrabScreenPos(o.vertex);
 
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
-
                 UNITY_TRANSFER_FOG(o,o.vertex);
                 return o;
             }
@@ -87,9 +95,9 @@ Shader "Unlit/WaterShader"
                 float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
                 float3 viewDir = normalize(_WorldSpaceCameraPos.xyz - mul(unity_ObjectToWorld, i.vertex));
                 i.worldNormal = normalize(mul(unity_ObjectToWorld, i.worldNormal));
+                i.normal = UnpackNormal(tex2D(_NormalMap,i.uv));
 
-                float NdotL = dot(i.worldNormal, lightDir);
-                NdotL = NdotL * _LambertScale + _LambertScale;                
+                float NdotL = dot(i.worldNormal, lightDir);             
                 // sample the texture
                 fixed4 col;
                 col.rgb = _WaterColor * _LightColor0.rgb * NdotL;
@@ -103,10 +111,16 @@ Shader "Unlit/WaterShader"
                 float specularLight = _SpecularColor.rgb * _LightColor0.rgb * specularAmount;
 
                 col.rgb += specularLight;
+                
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
+
+                fixed4 bgcolor = tex2Dproj(_BackgroundTexture, i.grabPos);
+                bgcolor += col;
+
                 return col;
             }
+
             ENDCG
         }
     }

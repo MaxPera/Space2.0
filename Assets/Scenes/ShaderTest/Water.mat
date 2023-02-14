@@ -57,12 +57,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 46c9b2c471a59f24cbe88eae93a32f60, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: ae0e7acc3616ba441a70994eb662f6e3, type: 3}
+        m_Scale: {x: 2.6, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -89,9 +93,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Alpha: 0.424
+    - _Alpha: 0.761
     - _AlphaClip: 0
-    - _Amount: 2
+    - _Amount: 1
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -100,7 +104,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Distance: 2.06
+    - _Distance: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
@@ -112,7 +116,7 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Shininess: 26.74
+    - _Shininess: 329.1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -126,6 +130,6 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _SpecularColor: {r: 0.5990566, g: 0.9883427, b: 1, a: 1}
-    - _WaterColor: {r: 0, g: 0.40897778, b: 0.6132076, a: 1}
+    - _SpecularColor: {r: 0.41037738, g: 0.98265815, b: 1, a: 1}
+    - _WaterColor: {r: 0, g: 0.4898331, b: 0.7169812, a: 1}
   m_BuildTextureStacks: []
